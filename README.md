@@ -1,56 +1,54 @@
-Retail Sales Forecasting using ARIMA, SARIMAX, and Prophet
+# 📈 Retail Sales Forecasting using ARIMA, SARIMAX & Prophet
 
-Project Overview
+## 📌 Overview
 
-This project focuses on forecasting retail sales using time series analysis techniques. The objective is to predict future weekly sales by analyzing historical sales patterns and external factors such as holidays, temperature, fuel prices, CPI, and unemployment rates.
+This project focuses on forecasting retail sales using classical time series forecasting techniques. Historical sales data along with external factors such as holidays, temperature, fuel prices, CPI, and unemployment are analyzed to predict future weekly sales.
 
-The project compares multiple forecasting approaches including ARIMA, SARIMAX, and Prophet to determine the most effective model for sales prediction.
+The project compares multiple forecasting models:
 
----
-
-Problem Statement
-
-Accurate sales forecasting helps businesses:
-
-- Manage inventory efficiently
-- Reduce stock shortages and overstock situations
-- Improve demand planning
-- Support business decision-making
-
-This project aims to forecast future sales based on historical retail data.
+- ARIMA
+- SARIMAX
+- Prophet
 
 ---
 
-Dataset
+## 🎯 Objectives
 
-The project uses the Walmart Retail Sales dataset consisting of:
+- Analyze historical retail sales trends
+- Perform time series preprocessing and stationarity testing
+- Build forecasting models
+- Compare model performance
+- Generate future sales predictions
 
-Train Dataset
+---
 
-- Store
-- Department
-- Date
-- Weekly Sales
-- IsHoliday
+## 📂 Dataset
 
-Features Dataset
+The project uses the Walmart Retail Sales Dataset.
 
+### Train Data
+| Column | Description |
+|----------|-------------|
+| Store | Store ID |
+| Dept | Department ID |
+| Date | Sales Date |
+| Weekly_Sales | Weekly Sales |
+| IsHoliday | Holiday Indicator |
+
+### Features Data
 - Temperature
 - Fuel Price
 - CPI
 - Unemployment
 - MarkDown Features
 
-Store Dataset
-
+### Store Data
 - Store Type
 - Store Size
 
-The datasets are merged to create a unified forecasting dataset.
-
 ---
 
-Technologies Used
+## 🛠️ Technologies Used
 
 - Python
 - Pandas
@@ -59,88 +57,81 @@ Technologies Used
 - Seaborn
 - Statsmodels
 - Prophet
-- Scikit-learn
+- Scikit-Learn
 
 ---
 
-Project Workflow
+## 🔄 Project Workflow
 
-1. Data Preprocessing
-
-- Data loading
+### 1️⃣ Data Preprocessing
 - Dataset merging
-- Handling missing values
+- Missing value handling
 - Date conversion
 - Data cleaning
 
-2. Exploratory Data Analysis
-
+### 2️⃣ Exploratory Data Analysis
 - Sales trend visualization
 - Rolling mean analysis
 - Rolling standard deviation analysis
 
-3. Stationarity Testing
-
-- Augmented Dickey-Fuller (ADF) Test
+### 3️⃣ Stationarity Testing
+- ADF Test
 - Differencing
 - Log Transformation
 
-4. Time Series Analysis
-
+### 4️⃣ Time Series Analysis
 - ACF Plot
 - PACF Plot
-- Trend Analysis
 
-5. Forecasting Models
+### 5️⃣ Forecasting Models
 
-ARIMA
+#### ARIMA
+AutoRegressive Integrated Moving Average model for time series forecasting.
 
-AutoRegressive Integrated Moving Average model used for univariate time series forecasting.
+#### SARIMAX
+Seasonal ARIMA with exogenous variables.
 
-SARIMAX
+#### Prophet
+Forecasting model developed by Meta for trend and seasonality analysis.
 
-Seasonal ARIMA with exogenous variables that incorporates additional external factors affecting sales.
+### 6️⃣ Model Evaluation
 
-Prophet
+Metrics used:
 
-Facebook Prophet model for handling seasonality, trends, and holiday effects.
-
-6. Model Evaluation
-
-Models are evaluated using:
-
-- Mean Absolute Error (MAE)
-- Mean Squared Error (MSE)
-- Root Mean Squared Error (RMSE)
+- MAE
+- MSE
+- RMSE
 
 ---
 
-Results
+## 📊 Results
 
-The forecasting models successfully captured sales trends and generated future sales predictions.
+✔ Successfully analyzed sales trends
 
-Key outcomes:
+✔ Achieved stationarity through transformations
 
-- Historical sales patterns were identified.
-- Stationarity was achieved through transformations and differencing.
-- Multiple forecasting techniques were compared.
-- Future weekly sales forecasts were generated.
+✔ Built and compared multiple forecasting models
+
+✔ Generated future weekly sales forecasts
+
 
 ---
 
-Future Improvements
+## 🚀 Future Improvements
 
-- Forecast multiple stores and departments simultaneously.
-- Add feature engineering techniques.
-- Implement XGBoost and LightGBM forecasting models.
-- Perform hyperparameter tuning.
-- Deploy the model using Streamlit.
-- Create an interactive dashboard using Power BI.
+- Forecast multiple stores and departments
+- Add feature engineering
+- Implement XGBoost forecasting
+- Implement LightGBM forecasting
+- Hyperparameter tuning
+- Deploy using Streamlit
+- Create Power BI Dashboard
 
 
 
 ---
 
-Conclusion
+## 👨‍💻 Author
 
-This project demonstrates the complete workflow of a time series forecasting solution, including data preprocessing, stationarity testing, time series analysis, model development, evaluation, and future sales prediction using ARIMA, SARIMAX, and Prophet models.
+Shyam
+
